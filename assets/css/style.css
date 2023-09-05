@@ -5,3 +5,147 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+body {
+    height: 100%;
+    background-color: rgb(241, 240, 232);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* GLOBAL CLASSES */
+.text-center {
+    text-align: center;
+}
+
+/* CUSTOM CLASSES */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.logo {
+    margin: 0 1%;
+}
+
+nav {
+    /* display: flex; */
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+nav a {
+    color: rgb(103, 128, 103);
+    padding: 0 30px;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://picsum.photos/1200/800);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    color: white;
+}
+
+.hero hr {
+    margin: 20px 25%;
+    border-radius: 60%;
+}
+
+/* PROJECT CARD CLASSES */
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 10%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3333%;
+    border-radius: 20px;
+    padding: 15px;
+    height: 550px;
+    width: 350px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 20px rgb(104, 104, 104);
+    background: linear-gradient(180deg, rgb(195, 156, 130) 0%, rgb(237, 216, 179) 35%, rgba(255, 255, 255, 1) 100%);    
+    transition: 0.2s ease-in-out;
+    /* color: rgb(126, 155, 125); */
+}
+
+.card:hover {
+    transform: translate(4px, -10px);
+}
+
+.card img {
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+.card h4 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.card figcaption {
+    flex: 1;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card hr {
+    margin: 0 25%;
+    border-radius: 60%;
+}
+
+.project-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 15px;
+}
+
+.project-btn button {
+    /* padding: 8px 15px; */
+    border-radius: 6px;
+    padding: 1em;
+    margin: 0 20px;
+    background-color: #efefef;
+    border: 1px solid #000;
+    transition: background-color .4s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.project-btn button:hover {
+    background-color: rgb(146, 115, 95);
+    border: none;
+    color: #ffffff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    nav a {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav a {
+        padding: 0 5px;
+    }
+}
