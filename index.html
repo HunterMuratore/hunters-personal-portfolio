@@ -7,6 +7,68 @@
     <title>Hunter's Portfolio</title>
 </head>
 <body>
-    
+    <header class="header">    
+        <div class="logo"><a href="#home"><img src="assets/imgs/logo-brown.png" alt="Pink H M Logo" width="60px"></a></div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>  
+    </header>
+
+    <figure id="home" class="hero text-center">
+        <h1>Hunter Muratore</h1>
+        <hr>
+        <h3>Step Into My World</h3>
+    </figure>
+
+    <section id="about" class="about text-center">
+        <h2>About Me</h2>
+        <article>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air Liquide. Looking for a change in my life and career I began devoting my time to learning software development. I have created various projects, including this portfolio, all with the goal of deepening my understanding of programming.</article>
+        <article>When I’m not working or studying I enjoy playing challenging games. Some of my favorites include Slay The Spire, Terraria, Rocket League, and Magic: The Gathering. </article>
+    </section>
+
+    <section id="work" class="work text-center">
+        <h3>Projects</h3>
+        <main class="project-cards">
+            <figure class="card">
+                <img src="assets/imgs/formforwarder.png" alt="Sample Form Forwarder Email" height="225px" width="275px">
+                <h4>FormForwarder</h4>
+                <figcaption class="card-body">An API built in C# using .NET Core that takes in form data and formats it into an email to send to user.</figcaption>
+                <hr>
+                <div class="project-btn">
+                    <a href="https://github.com/HunterMuratore/FormForwarder" target="_blank"><button   type="button" class="github-btn">GitHub</button></a>
+                </div>
+            </figure>
+            <figure class="card">
+                <img src="assets/imgs/pokemon-gen.png" alt="Pokemon Generator Example Showing Haunter" height="225px" width="275px">
+                <h4>Pokemon Generator</h4>
+                <figcaption class="card-body">Template built in HTML and Javascript that generates a random Pokemon on button click and changes CSS to match the Pokemon's type.</figcaption>
+                <hr>
+                <div class="project-btn">
+                    <a href="https://github.com/HunterMuratore/Random-Pokemon-Generator"        target="_blank"><button type="button" class="github-btn">GitHub</button></a>
+                    <a href="https://huntermuratore.github.io/Random-Pokemon-Generator/"        target="_blank"><button type="button" class="demo-btn">Live Demo</button></a>
+                </div>
+            </figure>
+            <figure class="card">
+                <img src="assets/imgs/clouds.jpg" alt="Clouds In The Sky" height="225px" width="275px">
+                <h4>Weather App</h4>
+                <figcaption class="card-body">This will be a weather app that displays the weather and other things. Project coming soon!</figcaption>
+                <hr>
+                <div class="project-btn">
+                    <a href=""><button type="button" class="github-btn">Coming Soon</button></a>
+                </div>
+            </figure>
+        </main>
+    </section>
+
+    <section id="contact" class="contact text-center">
+        Contact me
+    </section>
+
+    <footer class="footer text-center">
+        This is the footer
+    </footer>
 </body>
 </html>
