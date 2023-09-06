@@ -1,0 +1,54 @@
+/* VARIABLES */
+:root {
+    --theme-color-light: rgb(250, 245, 238);
+    --theme-color-medium: rgb(237, 216, 179);
+    --theme-color-dark: rgb(195, 156, 130);
+    --highlight-color: rgb(103, 128, 103);
+    --header-font-size: 36px;
+}
+
+/* RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--theme-color-light);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* CUSTOM CLASSES */
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45vh;
+    padding: 0 25px;
+}
+
+main > *:not(:first-child) {
+    margin-top: 25px
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background-color .4s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--theme-color-dark);
+    color: #fff;
+}

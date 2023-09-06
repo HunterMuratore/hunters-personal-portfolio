@@ -50,12 +50,17 @@ a {
 
 nav {
     justify-content: space-between;
-    margin-right: 20px;
 }
 
 nav a {
     color: var(--highlight-color);
-    padding: 0 30px;
+    padding: 26px 30px;
+    background-color: transparent;
+    transition: background-color .5s ease-in-out;
+}
+
+nav a:hover {
+    background-color: rgba(146, 146, 146, 0.4);
 }
 
 /* HERO CLASSES */
@@ -185,7 +190,6 @@ nav a {
 }
 
 .project-btn button {
-    /* padding: 8px 15px; */
     border-radius: 6px;
     padding: 1em;
     margin: 0 20px;
@@ -210,10 +214,28 @@ nav a {
     font-size: var(--header-font-size);
 }
 
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin-top: 10px;
+}
+
+.contact-info p:not(:last-child) {
+    margin-right: 10px;
+}
+
+.contact-info a {
+    text-decoration: underline;
+    color: var(--highlight-color);
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
-    margin: 35px auto 0;
+    margin: 20px auto 0;
     width: 350px;
 }
 
@@ -228,14 +250,29 @@ nav a {
 
 #contact-form h3 {
     text-align: left;
-    font-size: smaller;
-    padding: 0;
-    margin: 0;
+    font-size: 16px;
+    margin-left: -10px;
+}
+
+#contact-form button {
+    align-self: flex-end;
+    width: 70px;
+    border-radius: 6px;
+    background-color: #efefef;
+    border: 1px solid #000;
+    transition: background-color .4s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+#contact-form button:hover {
+    background-color: rgb(146, 115, 95);
+    color: #ffffff;
 }
 
 /* FOOTER CLASSES */
 .footer {
     width: 100%;
+    line-height: 1.4;
 }
 
 /* MEDIA QUERIES */
