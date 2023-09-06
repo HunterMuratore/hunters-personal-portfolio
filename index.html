@@ -17,16 +17,21 @@
         </nav>  
     </header>
 
-    <figure id="home" class="hero text-center">
-        <h1>Hunter Muratore</h1>
-        <hr>
-        <h3>Step Into My World</h3>
-    </figure>
-
+    <section id="home" class="hero">
+        <div class="hero-text text-center">
+            <h1>Hunter Muratore</h1>
+            <hr>
+            <h3>Step Into My World</h3>
+        </div>
+    </section>
+    
     <section id="about" class="about text-center">
-        <h2>About Me</h2>
-        <article>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air Liquide. Looking for a change in my life and career I began devoting my time to learning software development. I have created various projects, including this portfolio, all with the goal of deepening my understanding of programming.</article>
-        <article>When I’m not working or studying I enjoy playing challenging games. Some of my favorites include Slay The Spire, Terraria, Rocket League, and Magic: The Gathering. </article>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <article>Through 2020 and 2021 I worked as a R&D specialist in an inorganic chemistry lab at Air    Liquide. Looking for a change in my life and career I began devoting my time to learning software  development. I have created various projects, including this portfolio, all with the goal of     deepening my understanding of programming.</article>
+            <article>When I’m not working or studying I enjoy playing challenging games. Some of my favorites   are Slay The Spire, Terraria, Rocket League, and Magic: The Gathering. </article>
+        </div>
+        <img src="assets/imgs/LD_072419_DSSI_Hunter_Muratore_C'20_0634.jpg" alt="Hunter's Headshot">
     </section>
 
     <section id="work" class="work text-center">
@@ -64,11 +69,21 @@
     </section>
 
     <section id="contact" class="contact text-center">
-        Contact me
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="">
+            <h3>Name:</h3>
+            <input type="text" placeholder="Enter your name">
+            <h3>Email:</h3>
+            <input type="email" placeholder="Enter your email">
+            <h3>Message:</h3>
+            <textarea cols="30" rows="10" placeholder="Type your message here..."></textarea>
+            <button>Submit</button>
+        </form>
     </section>
 
     <footer class="footer text-center">
-        This is the footer
+        <p>&copy; 2023</p>
+        <p>Designed and Dev'd by Hunter Muratore</p>
     </footer>
 </body>
 </html>
