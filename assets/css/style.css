@@ -65,7 +65,7 @@ nav a:hover {
 
 /* HERO CLASSES */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://picsum.photos/1200/800);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://picsum.photos/id/564/1200/800);
     background-size: cover;
     background-position: center;
     display: flex;
