@@ -21,7 +21,7 @@
         <div class="hero-text text-center">
             <h1>Hunter Muratore</h1>
             <hr>
-            <h3>Step Into My World</h3>
+            <h3>something something</h3>
         </div>
     </section>
     
@@ -70,14 +70,22 @@
 
     <section id="contact" class="contact text-center">
         <h2>Contact Me</h2>
-        <form id="contact-form" action="">
+        <div class="contact-info">
+            <p>Phone: <a href="tel:9082958180">(908) 295-8180</a></p>
+            <p>Email: <a href="mailto:muratoreh@gmail.com" target="_blank">muratoreh@gmail.com</a></p>
+        </div>
+        <form id="contact-form" action="https://mail.huntermuratore.com/muratoreh@gmail.com" method="POST">
+            <!-- Success Page -->
+            <input type="hidden" name="_next" value="https://huntermuratore.github.io/personal-portfolio-challenge/success.html">
+            <!-- Email Subject -->
+            <input type="hidden" name="subject" value="New Portfolio Message">
             <h3>Name:</h3>
-            <input type="text" placeholder="Enter your name">
+            <input type="text" name="First Name" id="firstName" required="">
             <h3>Email:</h3>
-            <input type="email" placeholder="Enter your email">
+            <input type="email" name="Email" id="emailInfo" placeholder="your@email.com" required="">
             <h3>Message:</h3>
-            <textarea cols="30" rows="10" placeholder="Type your message here..."></textarea>
-            <button>Submit</button>
+            <textarea cols="30" rows="10" name="Message" id="message" placeholder="Type your message here" required=""></textarea>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
